@@ -52,6 +52,10 @@ forecast:
   description: List of days in the 7-day forecast you would like to receive data on, starting with today as day 0 and ending with day 7. Any condition from `monitored_conditions` with a daily forecast by Dark Sky will generate a sensor with entity_id `<condition>_<day>`.
   required: false
   type: list
+<p class='note warning'>
+Some monitored_conditions need 'forecast' to be set.
+(precip_accumulation, temperature_high, temperature_low, apparent_temperature_high, apparent_temperature_low, precip_intensity_max, moon_phase)
+</p>
 language:
   description: The desired language of the summary properties. The valid options are further down in a table.
   required: false
